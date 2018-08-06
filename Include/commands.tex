@@ -1,6 +1,7 @@
-\newcommand{\header}{\university\\\area\\\departament\\Bacharelado em \course}
+\newcommand{\header}{\small\MakeUppercase{\university}\\\MakeUppercase{\area}\\\textcolor{blueDimap}{\MakeUppercase{\departament}}\\\MakeUppercase{Bacharelado em \course}
+\textcolor{blueDimap}{\rule{0.8\textwidth}{4pt}}}
 
-\newcommand{\printheader}{\fancyhead{}\rhead{\textbf{\header}}\lhead{\includegraphics[width=2cm]{Logotipo-DIMAp}}}
+\newcommand{\printheader}{\fancyhead{}\renewcommand{\headrulewidth}{0pt}\rhead{\textbf{\header}}\lhead{\includegraphics[width=2cm]{Logotipo-DIMAp}}}
 
 
 \newcommand{\demands}{
