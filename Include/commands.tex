@@ -10,6 +10,7 @@
 Caso o requerente cumpra as exigências da Resolução no 03/2016-CCCC de 02 de dezembro de 2016, apenas a assinatura do orientador é suficiente.
 }
 
+%Maybe change to environment
 \newcommand{\signatures}[2]
 {\begin{multicols}{2}
 		\begin{tabular}{|p{0.4\textwidth}|}
@@ -45,3 +46,25 @@ Caso o requerente cumpra as exigências da Resolução no 03/2016-CCCC de 02 de 
 }
 
 \makeatother
+
+%%%% 
+\newcommand{\printStudent}{ALUNO: \dotuline{\student}\dotfill} 
+
+\newcommand{\printStudentWhId}{ALUNO: \dotuline{\student} \dotfill MATRICULA: \dotuline{\studentid} \dotfill} 
+
+\newcommand{\printAdvisor}[1]{\MakeUppercase{ORIENTADOR#1}: \dotuline{\advisorName} \dotfill} 
+
+\newcommand{\printAdvisorFull}[1]{\MakeUppercase{ORIENTADOR#1}: \dotuline{\advisorName} \dotfill GRAU DE FORMAÇÃO:  \dotuline{\advisorDegree} \dotfill  \\
+CARGO: \dotuline{\advisorPosition}\dotfill LOTAÇÃO: \dotuline{\advisorLotacao}\dotfill} 
+
+\newcommand{\printCoadvisor}[1]{\MakeUppercase{CO-ORIENTADOR#1}: \dotuline{\coadvisorName} \dotfill} 
+
+\newcommand{\printCoadvisorFull}[1]{\MakeUppercase{CO-ORIENTADOR#1}: \dotuline{\advisorName} \dotfill \MakeUppercase{GRAU DE FORMAÇÃO}: \dotuline{\advisorDegree} \dotfill\\\MakeUppercase{CARGO}: \dotuline{\advisorPosition}\dotfill \MakeUppercase{LOTAÇÃO}: \dotuline{\advisorLotacao}\dotfill} 
+
+\newcommand{\printThesisName}{\MakeUppercase{Tema do trabalho}: \dotuline{\thesisTitle}\dotfill} 
+
+\newcommand{\printSemester}{\MakeUppercase{Semestre}: \dotuline{\semester} \dotfill}
+
+\newcommand{\printKeyWords}{\MakeUppercase{Palavras-chave: }: \dotuline{\thesisKeywords} \dotfill}
+
+\newcommand{\printResume}{\MakeUppercase{Resumo }:  \dotuline{\thesisResume} \dotfill}

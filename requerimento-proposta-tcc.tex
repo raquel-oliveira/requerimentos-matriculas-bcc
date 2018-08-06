@@ -12,16 +12,14 @@
 	\begin{center}\Large \bf REQUERIMENTO DE MATRÍCULA\\ 
 		PROPOSTA DE MONOGRAFIA DE GRADUAÇÃO
 	\end{center}
-	Aluno: \dotuline{\student} \dotfill \\
-	Orientador: \dotuline{\advisorName} \dotfill Grau de formação:  \dotuline{\advisorDegree} \dotfill  \\
-	Cargo: \dotuline{\advisorPosition}\dotfill Lotação: \dotuline{\advisorLotacao}\dotfill \\
-	Co-orientador: \dotuline{\coadvisorName} \dotfill Grau de formação:  \dotuline{\coadvisorDegree} \dotfill  \\
-	Cargo: \dotuline{\coadvisorPosition}\dotfill Lotação: \dotuline{\coadvisorLotacao}\dotfill
+	\printStudent\\
+	\printAdvisorFull{}\\
+	\printCoadvisorFull{a}\\
 	\\
 	\\
-	Título do trabalho: \dotuline{\thesisTitle}\dotfill \\
-	Palavras-chave: \dotuline{\thesisKeywords} \dotfill \\
-	Resumo: \dotuline{\thesisResume} \dotfill
+	\printThesisName\\
+	\printKeyWords\\
+	\printResume
 	\dotcolumnfill
 	
 	\local, \dateRequirement
