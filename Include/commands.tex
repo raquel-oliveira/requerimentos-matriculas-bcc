@@ -48,23 +48,23 @@ Caso o requerente cumpra as exigências da Resolução no 03/2016-CCCC de 02 de 
 \makeatother
 
 %%%% 
-\newcommand{\printStudent}{ALUNO: \dotuline{\student}\dotfill} 
+\newcommand{\printStudent}[1]{\MakeUppercase{Alun#1}: \dotuline{\student\hfill}} 
 
-\newcommand{\printStudentWhId}{ALUNO: \dotuline{\student} \dotfill MATRICULA: \dotuline{\studentid} \dotfill} 
+\newcommand{\printStudentWhId}[1]{\MakeUppercase{Alun#1}: \dotuline{\student\hfill}  MATRICULA: \dotuline{\studentid\hfill} } 
 
-\newcommand{\printAdvisor}[1]{\MakeUppercase{ORIENTADOR#1}: \dotuline{\advisorName} \dotfill} 
+\newcommand{\printAdvisor}[1]{\MakeUppercase{ORIENTADOR#1}: \dotuline{\advisorName \hfill}} 
 
-\newcommand{\printAdvisorFull}[1]{\MakeUppercase{ORIENTADOR#1}: \dotuline{\advisorName} \dotfill GRAU DE FORMAÇÃO:  \dotuline{\advisorDegree} \dotfill  \\
-CARGO: \dotuline{\advisorPosition}\dotfill LOTAÇÃO: \dotuline{\advisorLotacao}\dotfill} 
+\newcommand{\printAdvisorFull}[1]{\MakeUppercase{ORIENTADOR#1}: \dotuline{\advisorName\hfill}GRAU DE FORMAÇÃO:  \dotuline{\advisorDegree\hfill}  \\
+CARGO: \dotuline{\advisorPosition\hfill}LOTAÇÃO: \dotuline{\advisorLotacao\hfill}} 
 
-\newcommand{\printCoadvisor}[1]{\MakeUppercase{CO-ORIENTADOR#1}: \dotuline{\coadvisorName} \dotfill} 
+\newcommand{\printCoadvisor}[1]{\MakeUppercase{CO-ORIENTADOR#1}: \dotuline{\coadvisorName\hfill}} 
 
-\newcommand{\printCoadvisorFull}[1]{\MakeUppercase{CO-ORIENTADOR#1}: \dotuline{\advisorName} \dotfill \MakeUppercase{GRAU DE FORMAÇÃO}: \dotuline{\advisorDegree} \dotfill\\\MakeUppercase{CARGO}: \dotuline{\advisorPosition}\dotfill \MakeUppercase{LOTAÇÃO}: \dotuline{\advisorLotacao}\dotfill} 
+\newcommand{\printCoadvisorFull}[1]{\MakeUppercase{CO-ORIENTADOR#1}: \dotuline{\advisorName\hfill} \MakeUppercase{GRAU DE FORMAÇÃO}: \dotuline{\advisorDegree\hfill}\\\MakeUppercase{CARGO}: \dotuline{\advisorPosition\hfill} \MakeUppercase{LOTAÇÃO}: \dotuline{\advisorLotacao\hfill}} 
 
-\newcommand{\printThesisName}{\MakeUppercase{Tema do trabalho}: \dotuline{\thesisTitle}\dotfill} 
+\newcommand{\printThesisName}{\MakeUppercase{Tema do trabalho}: \dotuline{\thesisTitle\hfill}} 
 
-\newcommand{\printSemester}{\MakeUppercase{Semestre}: \dotuline{\semester} \dotfill}
+\newcommand{\printSemester}{\MakeUppercase{Semestre}: \dotuline{\semester\hfill}}
 
-\newcommand{\printKeyWords}{\MakeUppercase{Palavras-chave: }: \dotuline{\thesisKeywords} \dotfill}
+\newcommand{\printKeyWords}{\MakeUppercase{Palavras-chave: }: \dotuline{\thesisKeywords\hfill} }
 
-\newcommand{\printResume}{\MakeUppercase{Resumo }:  \dotuline{\thesisResume} \dotfill}
+\newcommand{\printResume}{\MakeUppercase{Resumo }:  \dotuline{\thesisResume\hfill} }
