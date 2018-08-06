@@ -1,0 +1,47 @@
+\newcommand{\header}{\university\\\area\\\departament\\Bacharelado em \course}
+
+\newcommand{\printheader}{\fancyhead{}\rhead{\header}\lhead{\includegraphics[width=2cm]{Logotipo-DIMAp}}}
+
+
+\newcommand{\demands}{
+\noindent Caso o requerente não cumpra as exigências estipuladas no Artigo 3o, II da Resolução no 03/2016-CCCC de 02 de dezembro de 2016, conforme estipulado pelo Parágrafo Único, II do mesmo artigo, é necessário um parecer do orientador apresentando ciência das disciplinas que o aluno está matriculado e portando informações sobre o \textbf{andamento da monografia} e os \textbf{resultados já alcançados}.
+\\
+\\
+Caso o requerente cumpra as exigências da Resolução no 03/2016-CCCC de 02 de dezembro de 2016, apenas a assinatura do orientador é suficiente.
+}
+
+\newcommand{\signatures}[2]
+{\begin{multicols}{2}
+		\begin{tabular}{|p{0.4\textwidth}|}
+			\hline\\
+			Assinatura #1
+			\\
+			\\
+			\\\\\hline
+		\end{tabular}
+	\columnbreak 
+	\begin{tabular}{|p{0.4\textwidth}|}
+		\hline\\
+		Assinatura #2
+		\\
+		\\
+		\\\\\hline
+	\end{tabular} 
+	\end{multicols}
+}
+
+%%%%%%%
+\makeatletter
+
+\newcommand*\dotcolumnfill{%
+	\par
+	\null
+	\vskip -\ht\strutbox
+	\xleaders \hb@xt@ \hsize {%
+		\strut \cleaders \hb@xt@ .44em{\hss.\hss}\hfill
+	}\vfill
+	\vskip \ht\strutbox
+	%\break
+}
+
+\makeatother

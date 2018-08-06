@@ -1,0 +1,30 @@
+\documentclass[a4paper]{paper}
+\input{Include/packages.tex}
+\input{Include/informations.tex}
+\input{Include/configurations.tex}
+\input{Include/commands.tex}
+
+\printheader
+\setlength\headheight{60pt} %
+
+\begin{document}
+	
+	{\center \Large \bf REQUERIMENTO DE MATRÍCULA\\ 
+		PROPOSTA DE MONOGRAFIA DE GRADUAÇÃO
+	}
+	Aluno: \dotuline{\student} \dotfill \\
+	Orientador: \dotuline{\advisorName} \dotfill Grau de formação:  \dotuline{\advisorDegree} \dotfill  \\
+	Cargo: \dotuline{\advisorPosition}\dotfill Lotação: \dotuline{\advisorLotacao}\dotfill \\
+	Co-orientador: \dotuline{\coadvisorName} \dotfill Grau de formação:  \dotuline{\coadvisorDegree} \dotfill  \\
+	Cargo: \dotuline{\coadvisorPosition}\dotfill Lotação: \dotuline{\coadvisorLotacao}\dotfill
+	\\
+	\\
+	Título do trabalho: \dotuline{\thesisTitle}\dotfill \\
+	Palavras-chave: \dotuline{\thesisKeywords} \dotfill \\
+	Resumo: \dotuline{\thesisResume} \dotfill
+	\dotcolumnfill
+	
+	\local, \dateRequirement
+	
+	\signatures{do Aluno}{do Orientador}
+\end{document}
